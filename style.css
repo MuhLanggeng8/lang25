@@ -1,0 +1,237 @@
+.location {
+    color: white;
+  }
+
+  .phone-number {
+    color: white;
+  }
+
+  .shop-item {
+     position: relative;
+     overflow: hidden;
+     margin-bottom: 30px;
+  }
+
+  .shop-item img {
+     transition: transform 0.3s ease;
+  }
+
+  .shop-item:hover img {
+     transform: scale(1.1);
+  }
+
+  .shop-overlay {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+  }
+
+  .shop-overlay h5 {
+     font-size: 25px;
+     margin-bottom: 15px;
+     text-shadow:
+     -1px -1px 0 white,  
+     1px -1px 0 white,
+     -1px 1px 0 white,
+     1px 1px 0 white;
+  }
+
+  .shop-overlay p {
+     font-size: 18px;
+     text-shadow:
+     -1px -1px 0 white,  
+     1px -1px 0 white,
+     -1px 1px 0 white,
+     1px 1px 0 white;
+  }
+
+  .category-item {
+     position: relative;
+     overflow: hidden;
+     margin-bottom: 30px;
+  }
+
+  .category-item img {
+     transition: transform 0.3s ease;
+  }
+
+  .category-item:hover img {
+     transform: scale(1.1);
+     animation: shake 0.5s;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  .category-item img {
+     transition: transform 0.3s ease;
+     border-radius: 50%; /* membuat border elips */
+     border: 2px solid #ddd; /* warna dan ketebalan border */
+  }
+
+  .category-item:hover img {
+     transform: scale(1.1);
+  }
+
+  .about-overlay {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: left;
+  }
+
+  .about-overlay h5 {
+    text-align: left;
+    margin-left: -350px;
+  }
+
+  .about-overlay p {
+    text-align: left;
+    margin-left: -350px;
+    margin-right: 250px;
+  }
+
+  .catalog-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .catalog-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .catalog-item img {
+    transition: transform 0.3s ease;
+  }
+
+  .catalog-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .catalog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .catalog-overlay h5 {
+    text-align:center;
+  }
+
+  .catalog-overlay p {
+    text-align:center;
+  }
+
+  .catalog-item:hover .catalog-overlay {
+    opacity: 1;
+  }
+
+  .catalog-overlay h5, .catalog-overlay p {
+    margin: 0;
+  }
+
+  .catalog-overlay .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog-overlay .like {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .catalog-overlay .add-to-cart {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .background-image {
+    background-image: url('./assets/images/backg.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.395); 
+  }
+
+  .jumbotron {
+    background: transparent;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1; 
+  }
+
+  .feature {
+    padding: 50px 0;
+  }
+
+  .feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .feature-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .feature-description {
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .contact-form {
+    background-color: #FDF8F0;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(243, 152, 82);
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+  }
